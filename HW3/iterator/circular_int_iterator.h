@@ -20,10 +20,8 @@ public:
     bool operator!=(const struct circular_iterator_sentinel&) const { return true; }
 };
 
-// Sentinel type
 struct circular_iterator_sentinel {};
 
-// Allow sentinel != iterator
 inline bool operator!=(circular_iterator_sentinel, const circular_iterator&) {
     return true;
 }
